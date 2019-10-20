@@ -1,0 +1,97 @@
+<html>
+    <head>
+        <title> IO chat Application</title>
+
+        <script src="/socket.io/socket.io.js"></script>
+        <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <style>
+            .user-list{
+                list-style: none;
+            }
+            .user-list li{
+                margin: 15px;
+            }
+            .user-card img{
+                border-radius: 50%;
+            }
+            .user-card-header img {
+                border-radius: 50%;
+            }
+            .footer {
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                color: white;
+                text-align: center;
+            }
+            .chat-window {
+                height:560px;
+                border:1px solid black;
+                padding:0;
+            }
+            .message-input {
+                height: 50px;
+            }
+            .message-div {
+                height:440px;
+                overflow-y: scroll;
+            }
+
+        </style>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="index.js"></script>
+        
+    </head>
+    <body>
+            <div class="row">
+            <div class="col-md-4 user-list-sidebar">
+                <ul class="user-list">
+                    <li>
+                        <div class="user-card">
+                                    <div class="row">
+                                        <div class="col-md-3" style="border:1px solid black">
+                                            <img height="100px" width="100%" src="https://images.unsplash.com/photo-1497316730643-415fac54a2af?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" alt="user photo"/>
+                                        </div>
+                                        <div class="col-md-9">
+                                            <div class="row">
+                                                <div class="col-md-6" id="user-name">User Name</div>
+                                                <div class="col-md-6" id="message-date"> Date</div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-6" id="recent-message">hello Message</div>
+                                                <div class="col-md-6">down button</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </div>
+                    </li>
+                    <li>
+                            <div class="user-card">
+                                    <div class="row">
+                                        <div class="col-md-3" style="border:1px solid black">
+                                            <img height="100px" width="100%" src="https://images.unsplash.com/photo-1497316730643-415fac54a2af?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" alt="user photo"/>
+                                        </div>
+                                        <div class="col-md-9">
+                                            <div class="row">
+                                                <div class="col-md-6" id="user-name">User Name 1</div>
+                                                <div class="col-md-6" id="message-date"> Date</div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-6" id="recent-message">hello Message</div>
+                                                <div class="col-md-6">down button</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                    </li>
+                    <li>User3</li>
+                </ul>
+            </div>
+            <div class="col-md-8 chat-window">
+                
+                
+            </div>
+            </div>
+    </body>
+</html>

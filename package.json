@@ -1,0 +1,19 @@
+{
+  "name": "chat_web_app",
+  "version": "1.0.0",
+  "description": "This is a realtime chat application done using websockets(sockets.io 2.0)",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Puneethnaik/chat_web_app.git"
+  },
+  "author": "Puneeth N Naik",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Puneethnaik/chat_web_app/issues"
+  },
+  "homepage": "https://github.com/Puneethnaik/chat_web_app#readme"
+}
